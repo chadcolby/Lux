@@ -11,5 +11,8 @@
 @interface CCAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (nonatomic) BOOL isLargeScreen;
+
+
 
 @end
