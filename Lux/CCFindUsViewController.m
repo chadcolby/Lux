@@ -1,26 +1,27 @@
 //
-//  CCCommunitiesViewController.m
+//  CCFindUsViewController.m
 //  Lux
 //
-//  Created by Chad D Colby on 4/7/14.
+//  Created by Chad D Colby on 4/8/14.
 //  Copyright (c) 2014 Byte Meets World. All rights reserved.
 //
 
-#import "CCCommunitiesViewController.h"
+#import "CCFindUsViewController.h"
 
-@interface CCCommunitiesViewController ()
+@interface CCFindUsViewController ()
 
 @end
 
-@implementation CCCommunitiesViewController
+@implementation CCFindUsViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
-    UITabBarItem *selectedItem = [self.tabBarController.tabBar.items objectAtIndex:1];
-    UIImage *selectedImage = [UIImage imageNamed:@"solidGroup"];
+    UITabBarItem *selectedItem = [self.tabBarController.tabBar.items objectAtIndex:2];
+    UIImage *selectedImage = [UIImage imageNamed:@"solidMap"];
     selectedItem.selectedImage = selectedImage;
+
 }
 
 - (void)didReceiveMemoryWarning

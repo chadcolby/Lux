@@ -1,5 +1,5 @@
 //
-//  CCAppDelegate.h
+//  CCMasterViewController.h
 //  Lux
 //
 //  Created by Chad D Colby on 4/7/14.
@@ -8,9 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CCAppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
-
+@interface CCMasterViewController : UIViewController <UITabBarControllerDelegate, UITabBarDelegate>
 
 @end

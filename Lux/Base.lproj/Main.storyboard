@@ -15,9 +15,31 @@
                     <view key="view" contentMode="scaleToFill" id="yTF-Im-7dt">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="UVA-hP-gFE">
+                                <rect key="frame" x="20" y="80" width="280" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="QMJ-m5-jXn">
+                                <rect key="frame" x="20" y="20" width="280" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title=""/>
+                                    <segment title=""/>
+                                    <segment title=""/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Coffee" image="Coffee" id="GLC-SE-AX1"/>
+                    <connections>
+                        <outlet property="segmentSelect" destination="QMJ-m5-jXn" id="Wr3-b5-hXt"/>
+                        <outlet property="welcomeLabel" destination="UVA-hP-gFE" id="lXu-FG-DdM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MaN-L0-xdf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -42,10 +64,10 @@
             </objects>
             <point key="canvasLocation" x="980" y="-159"/>
         </scene>
-        <!--View Controller - Find Us-->
+        <!--Find Us View Controller - Find Us-->
         <scene sceneID="mHF-pi-JRR">
             <objects>
-                <viewController id="3pv-Ty-aVX" sceneMemberID="viewController">
+                <viewController id="3pv-Ty-aVX" customClass="CCFindUsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="H5m-8Z-mwl"/>
                         <viewControllerLayoutGuide type="bottom" id="8z0-sb-8Xc"/>
@@ -61,10 +83,10 @@
             </objects>
             <point key="canvasLocation" x="980" y="603"/>
         </scene>
-        <!--View Controller - Chat-->
+        <!--Chat View Controller - Chat-->
         <scene sceneID="EPr-aA-6tg">
             <objects>
-                <viewController id="lmW-q6-Gz7" sceneMemberID="viewController">
+                <viewController id="lmW-q6-Gz7" customClass="CCChatViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oqg-6z-nut"/>
                         <viewControllerLayoutGuide type="bottom" id="fVl-YR-4cO"/>
